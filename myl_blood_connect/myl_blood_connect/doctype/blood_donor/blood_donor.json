@@ -11,10 +11,13 @@
   "blood_donor_information_section",
   "full_name",
   "mobile_number",
-  "branch",
+  "alternative_number",
+  "whats_app_number",
   "column_break_jbam",
+  "branch",
   "house_name",
-  "blood_gorup"
+  "blood_gorup",
+  "present_location"
  ],
  "fields": [
   {
@@ -64,12 +67,27 @@
   {
    "fieldname": "column_break_jbam",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "alternative_number",
+   "fieldtype": "Data",
+   "label": "Alternative Number "
+  },
+  {
+   "fieldname": "present_location",
+   "fieldtype": "Data",
+   "label": "Present Location"
+  },
+  {
+   "fieldname": "whats_app_number",
+   "fieldtype": "Data",
+   "label": "Whats App Number"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-10-19 23:38:39.464984",
+ "modified": "2026-10-20 10:44:00.123593",
  "modified_by": "Administrator",
  "module": "MYL Blood Connect",
  "name": "Blood Donor",

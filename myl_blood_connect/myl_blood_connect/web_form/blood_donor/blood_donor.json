@@ -16,13 +16,13 @@
  "hide_footer": 0,
  "hide_navbar": 0,
  "idx": 0,
- "introduction_text": "<div class=\"ql-editor read-mode\"><p><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">Muslim Youth League \u2013 Thiruvallur Panchayath Blood Donor Management System</strong></p></div>",
+ "introduction_text": "<div class=\"ql-editor read-mode\"><h1 style=\"text-align: center;\">MYL Blood Connect! \ud83e\ude78</h1><p style=\"text-align: center;\"><strong>Muslim Youth League</strong><br></p><p style=\"text-align: center;\"><strong>Thiruvallur Panchayath Committee</strong></p><p style=\"text-align: center;\">Be a donor. Be a hope. Be the reason for someone\u2019s tomorrow.</p><p style=\"text-align: center;\">Register your blood group and donor details to help people find blood donors during medical emergencies</p><p><br></p></div>",
  "is_standard": 1,
  "key_required": 0,
  "list_columns": [],
  "login_required": 0,
  "max_attachment_size": 0,
- "modified": "2026-10-19 23:18:25.765258",
+ "modified": "2026-10-20 10:57:01.667460",
  "modified_by": "Administrator",
  "module": "MYL Blood Connect",
  "name": "blood-donor",
@@ -34,7 +34,7 @@
  "show_sidebar": 0,
  "success_message": "\nYour blood group details have been submitted successfully to the Muslim Youth League, Thiruvallur Panchayath Committee.\n\nYour registration may help save a life in an emergency. Thank you for your willingness to support those in need.\n\nDonate Blood. Save Lives. Be a Hero! \u2764\ufe0f\n\nMuslim Youth League \u2013 Thiruvallur Panchayath Committee",
  "success_title": "Thank You for Registering with MYL Blood Connect! \ud83e\ude78",
- "title": "Blood Donor",
+ "title": "Donor information",
  "web_form_fields": [
   {
    "allow_read_on_all_link_options": 0,
@@ -54,7 +54,7 @@
    "fieldname": "full_name",
    "fieldtype": "Data",
    "hidden": 0,
-   "label": "Full Name",
+   "label": "Full Name (In English)",
    "max_length": 0,
    "max_value": 0,
    "precision": "",
@@ -77,16 +77,28 @@
   },
   {
    "allow_read_on_all_link_options": 0,
-   "fieldname": "branch",
-   "fieldtype": "Link",
+   "fieldname": "alternative_number",
+   "fieldtype": "Data",
    "hidden": 0,
-   "label": "Branch",
+   "label": "Alternative Number ",
    "max_length": 0,
    "max_value": 0,
-   "options": "Branch",
    "precision": "",
    "read_only": 0,
-   "reqd": 1,
+   "reqd": 0,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "whats_app_number",
+   "fieldtype": "Data",
+   "hidden": 0,
+   "label": "Whats App Number",
+   "max_length": 0,
+   "max_value": 0,
+   "precision": "",
+   "read_only": 0,
+   "reqd": 0,
    "show_in_filter": 0
   },
   {
@@ -100,6 +112,20 @@
    "precision": "",
    "read_only": 0,
    "reqd": 0,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "hidden": 0,
+   "label": "Branch",
+   "max_length": 0,
+   "max_value": 0,
+   "options": "Branch",
+   "precision": "",
+   "read_only": 0,
+   "reqd": 1,
    "show_in_filter": 0
   },
   {
@@ -127,6 +153,19 @@
    "precision": "",
    "read_only": 0,
    "reqd": 1,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "present_location",
+   "fieldtype": "Data",
+   "hidden": 0,
+   "label": "Present Location",
+   "max_length": 0,
+   "max_value": 0,
+   "precision": "",
+   "read_only": 0,
+   "reqd": 0,
    "show_in_filter": 0
   }
  ]
