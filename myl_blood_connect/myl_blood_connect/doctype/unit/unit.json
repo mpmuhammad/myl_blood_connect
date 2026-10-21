@@ -2,13 +2,13 @@
  "actions": [],
  "allow_bulk_edit": 1,
  "allow_rename": 1,
- "autoname": "field:branch_name",
+ "autoname": "field:unit_name",
  "creation": "2026-10-19 22:44:06.344449",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "branch_details_section",
-  "branch_name",
+  "unit_name",
   "president",
   "secretary",
   "column_break_scey",
@@ -17,12 +17,6 @@
   "secretary_mobile"
  ],
  "fields": [
-  {
-   "fieldname": "branch_name",
-   "fieldtype": "Data",
-   "label": "Branch Name",
-   "unique": 1
-  },
   {
    "fieldname": "president",
    "fieldtype": "Data",
@@ -56,15 +50,21 @@
    "fieldname": "in_charge",
    "fieldtype": "Data",
    "label": "In Charge"
+  },
+  {
+   "fieldname": "unit_name",
+   "fieldtype": "Data",
+   "label": "Unit Name",
+   "unique": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-10-19 22:48:49.658482",
+ "modified": "2026-10-21 14:02:24.059931",
  "modified_by": "Administrator",
  "module": "MYL Blood Connect",
- "name": "Branch",
+ "name": "Unit",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [

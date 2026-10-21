@@ -40,6 +40,9 @@ app_license = "mit"
 # include js, css files in header of web template
 # web_include_css = "/assets/myl_blood_connect/css/myl_blood_connect.css"
 # web_include_js = "/assets/myl_blood_connect/js/myl_blood_connect.js"
+web_include_js = [
+    "/assets/myl_blood_connect/js/blood-donor-search.js"
+]
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "myl_blood_connect/public/scss/website"

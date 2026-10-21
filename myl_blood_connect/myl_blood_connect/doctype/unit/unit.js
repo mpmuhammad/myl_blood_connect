@@ -1,7 +1,7 @@
 // Copyright (c) 2026, Zoul Technologies Pvt Ltd and contributors
 // For license information, please see license.txt
 
-// frappe.ui.form.on("Branch", {
+// frappe.ui.form.on("Unit", {
 // 	refresh(frm) {
 
 // 	},

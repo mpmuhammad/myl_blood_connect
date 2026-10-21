@@ -1,0 +1,48 @@
+
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<div class="container py-4">
+    <div class="text-center mb-4">
+        <h1>🩸 MYL Blood Connect</h1>
+        <p>Find blood donors from your Unit</p>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-md-6 mb-3">
+            <label for="unit-filter">Unit</label>
+            <select id="unit-filter" class="form-control">
+                <option value="">All Units</option>
+                {% for unit in units %}
+                <option value="{{ unit.name }}">
+                    {{ unit.name }}
+                </option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label for="blood-filter">Blood Group</label>
+            <select id="blood-filter" class="form-control">
+                <option value="">All Blood Groups</option>
+                {% for group in [
+                    "A+", "A-", "B+", "B-",
+                    "O+", "O-", "AB+", "AB-"
+                ] %}
+                <option value="{{ group }}">{{ group }}</option>
+                {% endfor %}
+            </select>
+        </div>
+    </div>
+
+    <button id="search-donors" class="btn btn-danger mb-4">
+        Search Donors
+    </button>
+
+    <div id="donor-results" class="row">
+        <div class="col-12">
+            Select a filter and click Search Donors.
+        </div>
+    </div>
+</div>
+{% endblock %}
