@@ -10,18 +10,6 @@
 
     <div class="row mb-4">
         <div class="col-md-6 mb-3">
-            <label for="unit-filter">Unit</label>
-            <select id="unit-filter" class="form-control">
-                <option value="">All Units</option>
-                {% for unit in units %}
-                <option value="{{ unit.name }}">
-                    {{ unit.name }}
-                </option>
-                {% endfor %}
-            </select>
-        </div>
-
-        <div class="col-md-6 mb-3">
             <label for="blood-filter">Blood Group</label>
             <select id="blood-filter" class="form-control">
                 <option value="">All Blood Groups</option>

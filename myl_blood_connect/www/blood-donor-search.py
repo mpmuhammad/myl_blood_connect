@@ -6,19 +6,9 @@ def get_context(context):
     context.no_cache = 1
     context.title = "MYL Blood Connect"
 
-    context.units = frappe.get_all(
-        "Unit",
-        fields=["name"],
-        order_by="name asc",
-    )
-
-
 @frappe.whitelist(allow_guest=True)
 def search_donors(unit=None, blood_group=None):
     filters = {}
-
-    if unit:
-        filters["unit"] = unit
 
     if blood_group:
         allowed_groups = [

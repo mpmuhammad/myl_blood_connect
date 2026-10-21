@@ -1,6 +1,5 @@
 
 frappe.ready(function () {
-    const unitFilter = document.getElementById("unit-filter");
     const bloodFilter = document.getElementById("blood-filter");
     const searchButton = document.getElementById("search-donors");
     const results = document.getElementById("donor-results");
@@ -59,7 +58,6 @@ frappe.ready(function () {
         frappe.call({
             method: "myl_blood_connect.www.blood-donor-search.search_donors",
             args: {
-                unit: unitFilter.value,
                 blood_group: bloodFilter.value
             },
             callback: function (response) {

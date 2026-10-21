@@ -7,7 +7,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "branch_details_section",
+  "unit_details_section",
   "unit_name",
   "president",
   "secretary",
@@ -38,9 +38,9 @@
    "label": "Secretary Mobile"
   },
   {
-   "fieldname": "branch_details_section",
+   "fieldname": "unit_details_section",
    "fieldtype": "Section Break",
-   "label": "Branch Details"
+   "label": "Unit Details"
   },
   {
    "fieldname": "column_break_scey",
